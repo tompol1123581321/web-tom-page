@@ -1,0 +1,195 @@
+@import "~bootstrap/scss/bootstrap";
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: 0;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.pageContainer {
+	min-height: 83.5vh;
+	background-color: rgb(22, 22, 22);
+	overflow: hidden;
+	color: rgb(114, 113, 113);
+}
+.footer {
+	min-height: 6vh;
+	background-color: rgb(53, 58, 64);
+	text-align: center;
+	color: lightgray;
+}
+.logo_znak {
+	max-width: 20rem;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+	align-items: flex-start;
+	.Name {
+		color: white;
+		position: relative;
+		font-family: "Chakra Petch", sans-serif;
+		margin-top: 0.5rem;
+		font-size: 2rem;
+		text-transform: uppercase;
+		transform: rotate(355deg);
+		margin-left: 0;
+		padding-left: 0;
+		text-shadow: 0.07em 0 0 rgb(97, 4, 4), -0.03em -0.04em 0 rgb(78, 75, 223),
+			0.03em 0.06em 0 rgb(26, 97, 4);
+		animation: glitchy 750ms infinite;
+		span {
+			font-family: "Chakra Petch", sans-serif;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		span:first-child {
+			animation: glitchy 900ms infinite;
+			clip-path: polygon(0 0, 100% 0, 100% 40%, 0 45%);
+			transform: translate(-0.03em, -0.015em);
+			opacity: 0.7;
+			z-index: 2;
+		}
+		span:last-child {
+			animation: glitchy 1200ms infinite;
+			clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+			transform: translate(0.03em, 0.015em);
+			opacity: 0.7;
+			z-index: 3;
+		}
+	}
+}
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+a {
+	text-decoration: none;
+	color: #afafaf;
+}
+a:active {
+	text-decoration: none;
+}
+.nav1:hover {
+	text-shadow: 0.09em 0 0 rgb(97, 4, 4), -0.04em -0.05em 0 rgb(78, 75, 223),
+		0.05em 0.09em 0 rgb(26, 97, 4);
+	animation: glitchyNav 750ms infinite;
+	cursor: pointer;
+	color: white;
+}
+.nav2:hover {
+	text-shadow: 0.09em 0 0 rgb(97, 4, 4), -0.04em -0.05em 0 rgb(78, 75, 223),
+		0.05em 0.09em 0 rgb(26, 97, 4);
+	animation: glitchyNav 750ms infinite;
+	cursor: pointer;
+	color: white;
+}
+.nav2:visited {
+	text-shadow: 0.09em 0 0 rgb(97, 4, 4), -0.04em -0.05em 0 rgb(78, 75, 223),
+		0.05em 0.09em 0 rgb(26, 97, 4);
+	animation: glitchyNav 750ms infinite;
+	cursor: pointer;
+	color: white;
+}
+a:visited {
+	text-decoration: none;
+}
+
+@keyframes glitchy {
+	0% {
+		text-shadow: 0.07em 0 0 rgb(97, 4, 4), 0.05em 0.02em 0 rgb(164, 163, 236),
+			0.03em 0.06em 0 rgb(26, 97, 4);
+	}
+	10% {
+		text-shadow: 0.03em 0 0 rgb(238, 102, 197), -0.05em -0.05em 0 rgb(35, 152, 182),
+			0.01em 0.05em 0 rgb(26, 97, 4);
+	}
+	40% {
+		text-shadow: -0.07em 0 0 rgb(71, 0, 0), -0.09em 0.04em 0 rgb(4, 0, 245),
+			-0.03em -0.07em 0 rgb(26, 97, 4);
+	}
+	60% {
+		text-shadow: 0.05em 0 0 rgb(122, 0, 0), -0.02em -0.01em 0 rgb(4, 0, 245),
+			0.03em 0.01em 0 rgb(26, 97, 4);
+	}
+	90% {
+		text-shadow: -0.09em 0 0 rgb(97, 4, 4), 0.07em -0.03em 0 rgb(4, 0, 245),
+			0.05em -0.06em 0 rgb(26, 97, 4);
+	}
+}
+
+@keyframes glitchyNav {
+	0% {
+		text-shadow: 0.15em 0 0 rgb(97, 4, 4), 0.13em 0.09em 0 rgb(40, 36, 245),
+			0.13em 0.1em 0 rgb(26, 97, 4);
+	}
+	10% {
+		text-shadow: 0.2em 0 0 rgb(238, 102, 197), -0.12em -0.15em 0 rgb(0, 204, 255),
+			0.05em 0.1em 0 rgb(26, 97, 4);
+	}
+	40% {
+		text-shadow: -0.12em 0 0 rgb(255, 8, 8), -0.1em 0.13em 0 rgb(4, 0, 245),
+			-0.07em -0.06em 0 rgb(161, 255, 133);
+	}
+	60% {
+		text-shadow: 0.17em 0 0 rgb(255, 0, 0), -0.07em -0.12em 0 rgb(4, 0, 245),
+			0.13em 0.08em 0 rgb(26, 97, 4);
+	}
+	90% {
+		text-shadow: -0.11em 0 0 rgb(97, 4, 4), 0.05em -0.12em 0 rgb(4, 0, 245),
+			0.11em -0.15em 0 rgb(172, 255, 146);
+	}
+}
+
+.cardText {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.nav2 {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	color: #888888;
+}
+.nav2:hover {
+	text-decoration: none;
+}
+.nav2:visited {
+	text-decoration: none;
+}
+.middle {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 37vh;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	max-width: 50vw;
+	text-align: center;
+	margin: auto;
+	color: rgb(114, 113, 113);
+	.textMiddle {
+		font-size: 2.8rem;
+		text-align: center;
+		max-width: 100%;
+	}
+	.icons {
+		max-width: 100%;
+		display: flex;
+		margin: auto;
+		img {
+			max-width: 2.4rem;
+			margin: 0.1rem;
+		}
+	}
+}
+#navBar {
+	min-height: 10.5vh;
+}
+#formContacts {
+	transform: translateY(25%);
+}
