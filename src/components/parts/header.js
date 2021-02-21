@@ -5,12 +5,20 @@ import { LinkContainer } from "react-router-bootstrap"
 
 const Header = () => {
 	return (
-		<Navbar id="navBar" bg="dark" variant="dark" expand="lg">
+		<Navbar
+			id="navBar"
+			bg="dark"
+			variant="dark"
+			expand="lg"
+		>
 			<LinkContainer to="/">
 				<Navbar.Brand className="nav1">
 					<div class="logo_znak">
 						<h1 className="Name">
-							<span className="unselectable" aria-hidden="true">
+							<span
+								className="unselectable"
+								aria-hidden="true"
+							>
 								webtom
 							</span>
 							webtom
@@ -22,16 +30,19 @@ const Header = () => {
 				</Navbar.Brand>
 			</LinkContainer>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
-			<Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+			<Navbar.Collapse
+				id="basic-navbar-nav"
+				className="justify-content-end"
+			>
 				<Nav>
 					<LinkContainer to="/about">
 						<Nav.Link className="nav2">O mě</Nav.Link>
 					</LinkContainer>
-					<LinkContainer to="/offer">
-						<Nav.Link className="nav2">Nabídka</Nav.Link>
-					</LinkContainer>
+
 					<LinkContainer to="/projects">
-						<Nav.Link className="nav2">Projekty</Nav.Link>
+						<Nav.Link className="nav2">
+							Projekty/Nabídka
+						</Nav.Link>
 					</LinkContainer>
 					<LinkContainer to="/contact">
 						<Nav.Link className="nav2">Kontakty</Nav.Link>

@@ -1,25 +1,27 @@
+import { motion } from "framer-motion"
 import React from "react"
-import { Button, Container, Form } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import "../../style/mainStructure.scss"
+import { pageAnimation } from "../parts/animations"
+import FormPart from "../parts/Form"
+
 const Contacts = () => {
 	return (
-		<div className="pageContainer">
+		<motion.div
+			className="pageContainer"
+			exit="exit"
+			variants={pageAnimation}
+			initial="hidden"
+			animate="show"
+		>
 			<Container style={{ paddingTop: "2rem" }}>
-				<Form id="formContacts">
-					<Form.Group style={{ maxWidth: "15rem" }} controlId="exampleForm.ControlInput1">
-						<Form.Label>Email address</Form.Label>
-						<Form.Control type="email" />
-					</Form.Group>
-					<Form.Group controlId="exampleForm.ControlTextarea1">
-						<Form.Label>Your messege:</Form.Label>
-						<Form.Control as="textarea" rows={3} />
-					</Form.Group>
-					<Button variant="primary" type="submit">
-						Submit
-					</Button>
-				</Form>
+				<h4>
+					Pro komunikaci využívejte prosím následující
+					formulář.
+				</h4>
+				<FormPart />
 			</Container>
-		</div>
+		</motion.div>
 	)
 }
 
