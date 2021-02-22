@@ -21,6 +21,7 @@ const About = () => {
 						src="/images/myFace.jpg"
 						style={{
 							maxWidth: "15rem",
+							maxHeight: "15rem",
 							borderRadius: "0.4rem",
 						}}
 					/>
@@ -35,8 +36,8 @@ const About = () => {
 						obchodu a managementu v Praze a ve Würzburku
 						(Německo). Tam jsem tak poprvé přišel do styku s
 						programováním, což mě od první chvíle plně
-						pohltilo. Specializuji se na full-stack vývoj
-						webových aplikací.
+						pohltilo. Specializuji se na front-end a
+						full-stack vývoj webových aplikací.
 						<br />
 						Snažím se co nejvíce využívat nové technologie a
 						učit se. Mám rád výzvy a zakládám si na

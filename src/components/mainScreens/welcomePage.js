@@ -23,7 +23,6 @@ const WelcomePage = () => {
 					<img src="/images/3.ico" alt="" />
 					<img src="/images/4.ico" alt="" />
 					<img src="/images/5.ico" alt="" />
-					<img src="/images/6.ico" alt="" />
 				</Row>
 			</Container>
 		</motion.div>

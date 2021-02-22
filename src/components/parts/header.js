@@ -36,7 +36,7 @@ const Header = () => {
 			>
 				<Nav>
 					<LinkContainer to="/about">
-						<Nav.Link className="nav2">O mě</Nav.Link>
+						<Nav.Link className="nav2">O mně</Nav.Link>
 					</LinkContainer>
 
 					<LinkContainer to="/projects">
